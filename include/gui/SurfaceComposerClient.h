@@ -163,6 +163,7 @@ public:
     ScreenshotClient();
 
     // frees the previous screenshot and capture a new one
+    status_t update();
     status_t update(const sp<IBinder>& display);
     status_t update(const sp<IBinder>& display,
             uint32_t reqWidth, uint32_t reqHeight);
